@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int numero_visitantes;
+    
+    
+    printf("Digite o número de visitantes que entraram na empresa hoje: ");
+    
+   
+    if (scanf("%d", &numero_visitantes) != 1) {
+    
+        printf("Erro: Por favor, insira um número inteiro válido.\n");
+        return 1; 
+    }
+    
+   
+    printf("Visitantes registrados: %d\n", numero_visitantes);
+    printf("Obrigado! O número de visitantes foi registrado com sucesso.\n");
+    
+    return 0; 
+}
