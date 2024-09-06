@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>  // Para usar a função pow() se necessário
+
+#define PI 3.14159
+
+int main() {
+    float raio;
+    
+    printf("Digite o raio do círculo: ");
+    scanf("%f", &raio);
+    
+    float area = PI * pow(raio, 2);
+    printf("A área do círculo é: %.2f\n", area);
+    
+    return 0;
+}
