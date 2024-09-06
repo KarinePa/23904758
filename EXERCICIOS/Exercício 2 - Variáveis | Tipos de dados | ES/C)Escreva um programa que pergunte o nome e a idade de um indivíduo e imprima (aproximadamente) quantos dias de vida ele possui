@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int idade;
+    
+    printf("Digite seu nome: ");
+    char nome[50];
+    scanf("%49s", nome);  
+    
+    printf("Digite sua idade em anos: ");
+    scanf("%d", &idade);
+    
+    int dias = idade * 365;  
+    printf("%s, você tem aproximadamente %d dias de vida.\n", nome, dias);
+    
+    return 0;
+}
