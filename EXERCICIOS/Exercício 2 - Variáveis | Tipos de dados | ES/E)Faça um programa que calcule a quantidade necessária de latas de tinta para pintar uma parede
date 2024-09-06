@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+#define CONSUMO_TINTA 0.3  
+#define CAPACIDADE_LATA 2.0  
+
+int main() {
+    float largura, altura;
+    
+    printf("Digite a largura e altura da parede em metros: ");
+    scanf("%f %f", &largura, &altura);
+    
+    float area = largura * altura;
+    float litros_necessarios = area * CONSUMO_TINTA;
+    int latas = (int)ceil(litros_necessarios / CAPACIDADE_LATA); 
+    
+    printf("Quantidade de latas de tinta necessárias: %d\n", latas);
+    
+    return 0;
+}
