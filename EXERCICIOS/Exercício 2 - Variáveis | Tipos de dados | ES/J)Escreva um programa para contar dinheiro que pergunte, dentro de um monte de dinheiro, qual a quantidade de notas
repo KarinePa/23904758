@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int nota1, nota10, nota50, nota100;
+    
+    printf("Digite a quantidade de notas de 1 real, 10 reais, 50 reais e 100 reais:\n");
+    scanf("%d %d %d %d", &nota1, &nota10, &nota50, &nota100);
+    
+    int total = nota1 * 1 + nota10 * 10 + nota50 * 50 + nota100 * 100;
+    printf("O valor total em dinheiro é: %d reais\n", total);
+    
+    return 0;
+}
