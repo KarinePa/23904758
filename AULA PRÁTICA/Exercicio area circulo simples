@@ -1,10 +1,18 @@
 #include <stdio.h>
 #include <math.h>
+
+#define PI 3.14
+
 int main() {
-float raio, area;
-printf("Digite o raio: \n");
-scanf("%f", &raio);
-area = PI * pow(raio, 2);
-printf("Área total do círculo: %g \n", area);
-return 0;
+    float raio, area;
+
+    printf("Digite o raio: \n");
+    scanf("%f", &raio);
+
+
+    area = PI * pow(raio, 2);
+
+    printf("Área total do círculo: %g \n", area);
+
+    return 0;
 }
