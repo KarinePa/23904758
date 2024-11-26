@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+
+float temperatura;
+
+printf("Sistema de Monitoramento de Temperatura\n");
+
+printf("Digite a temperatura para iniciar o monitoramento: ");
+
+scanf("%f", &temperatura);
+
+while (temperatura < 20.0 || temperatura > 25.0) {
+
+if (temperatura < 20.0) {
+
+printf("Alerta: Temperatura abaixo de 20°C. Aumentando a ventilação...\n");
+
+} else if (temperatura > 25.0) {
+
+printf("Alerta: Temperatura acima de 25°C. Reduzindo a ventilação...\n");
+
+}
+
+printf("Digite a nova temperatura: ");
+
+scanf("%f", &temperatura);
+
+}
+
+printf("Temperatura dentro do intervalo seguro. Monitoramento finalizado.\n");
+
+
+return 0;
