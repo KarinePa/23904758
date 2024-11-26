@@ -1,0 +1,1 @@
+O trecho de código apresentado é um laço for que percorre os elementos de umvetor chamado sensorReadings e verifica se algum valor no vetor é igual a 150. Seencontrar esse valor, o laço é interrompido com o comando break.
