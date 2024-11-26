@@ -1,3 +1,5 @@
 for (int i = 0; i < 4; i++) {
 Serial.println(ledPins[i]);
 }
+
+Linha 1: for (int i = 0; i < 4; i++)Laço for: O for é um laço de repetição usado para iterar sobre uma sequência deelementos. Aqui, o laço está sendo utilizado para percorrer os índices de um vetor(no caso, o vetor ledPins).int i = 0: Inicializa a variável i com o valor 0. Esta será a variável de controle do laçoe será usada para acessar as posições do vetor ledPins.i < 4: O laço continuará enquanto i for menor que 4. Isso significa que o laço irárodar 4 vezes (para i = 0, i = 1, i = 2, e i = 3).i++: Após cada iteração, o valor de i será incrementado em 1. Ou seja, i passará de0 para 1, depois para 2, e por último para 3, até que a condição i < 4 não seja maisverdadeira.Linha 2: Serial.println(ledPins[i]);Serial.println(): A função Serial.println() é usada para enviar dados para o MonitorSerial do Arduino. Neste caso, ela imprime um valor seguido de uma nova linha.ledPins[i]: A variável i está sendo usada como índice para acessar os elementos dovetor ledPins. O valor de ledPins[i] será impresso no Monitor Serial a cada iteraçãodo laço.
