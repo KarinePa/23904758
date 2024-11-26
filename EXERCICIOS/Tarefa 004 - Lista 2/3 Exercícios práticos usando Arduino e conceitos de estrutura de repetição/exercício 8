@@ -1,0 +1,1 @@
+A instrução sizeof(sensorData) / sizeof(sensorData[0]) é utilizada para calcular onúmero de elementos de um vetor em C/C++ (e, portanto, também em programasArduino), dado que a linguagem C não possui uma função incorporada que forneçadiretamente o tamanho de um vetor.
