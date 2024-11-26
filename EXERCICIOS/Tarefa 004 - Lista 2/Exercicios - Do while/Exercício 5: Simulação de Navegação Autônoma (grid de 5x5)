@@ -1,0 +1,54 @@
+#include <stdio.h>
+int main() {
+int x = 2, y = 2;
+char comando;
+printf("Simulação de Navegação Autônoma do Robô\n");
+printf("O robô está na posição (%d, %d) no grid 5x5.\n", x, y);
+printf("Comandos disponíveis: U (cima), D (baixo), L (esquerda), R (direita), S(parar)\n");
+while (1) {
+printf("\nDigite um comando (U, D, L, R, S): ");
+scanf(" %c", &comando);
+if (comando == 'U' || comando == 'u') {
+if (x > 0) {
+x--;
+printf("Robô movido para cima. Nova posição: (%d, %d)\n", x, y);
+} else {
+printf("Movimento inválido! O robô não pode sair do grid.\n");
+break;
+}
+} else if (comando == 'D' || comando == 'd') {
+if (x < 4) 
+{x++; 
+printf("Robô movido para baixo. Nova posição: (%d, %d)\n", x, y);
+} else {
+printf("Movimento inválido! O robô não pode sair do grid.\n");
+break;
+}
+} else if (comando == 'L' || comando == 'l') {
+if (y > 0) {
+y--;
+printf("Robô movido para a esquerda. Nova posição: (%d, %d)\n", x, y);
+} else {
+printf("Movimento inválido! O robô não pode sair do grid.\n");
+break;
+}
+} else if (comando == 'R' || comando == 'r') {if (y < 4) {
+y++;
+printf("Robô movido para a direita. Nova posição: (%d, %d)\n", x, y);
+} else {
+printf("Movimento inválido! O robô não pode sair do grid.\n");
+break;
+}
+} else if (comando == 'S' || comando == 's') {
+printf("O robô foi parado. Programa encerrado.\n");
+break;
+} else {
+printf("Comando inválido! Tente novamente.\n");
+}
+if (x < 0 || x > 4 || y < 0 || y > 4) {
+printf("O robô saiu do grid. Programa encerrado.\n");
+break;
+}
+}
+return 0;
+}
