@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main() {
+int acao;
+do {
+printf("\nControle de Atuação do Robô\n");
+printf("Selecione uma ação:\n");
+printf("1 - Ligar a lâmpada\n");
+printf("2 - Tocar um som\n");
+printf("3 - Mover o braço\n");
+printf("4 - Encerrar o programa\n");
+printf("Digite a opção desejada: ");
+scanf("%d", &acao);
+switch (acao) {
+case 1:
+printf("A lâmpada foi ligada.\n");
+break;
+case 2:
+printf("O som foi tocado.\n");
+break;
+case 3:printf("O braço foi movido.\n");
+break;
+case 4:printf("Programa encerrado.\n");
+break;
+default:
+printf("Opção inválida. Tente novamente.\n");
+break;
+}
+} while (acao != 4);
+return 0;
+}
