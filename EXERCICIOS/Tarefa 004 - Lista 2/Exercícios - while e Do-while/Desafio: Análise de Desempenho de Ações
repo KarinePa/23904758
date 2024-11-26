@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+int main() { int dias; char opcao;
+do {printf("Quantos dias deseja analisar os preços das ações? ");
+scanf("%d", &dias);
+float precos[dias];
+float soma = 0.0;
+for (int i = 0; i < dias; i++) {
+printf("Digite o preço das ações no dia %d: R$ ", i + 1);
+scanf("%f", &precos[i]);
+soma += precos[i];
+}
+float media = soma / dias;
+float soma_dos_quadrados = 0.0;
+for (int i = 0; i < dias; i++) {
+soma_dos_quadrados += pow(precos[i] - media, 2);
+}
+float desvio_padrao = sqrt(soma_dos_quadrados / dias);
+printf("\nMédia dos preços das ações: R$ %.2f\n", media);
+printf("Desvio padrão dos preços das ações: R$ %.2f\n",desvio_padrao);
+if (desvio_padrao / media < 0.05) {
+printf("Ação considerada ESTÁVEL.\n");
+} else {
+printf("Ação considerada VOLÁTIL.\n");
+}
+printf("\nDeseja analisar novos dados? (s/n): ");
+scanf(" %c", &opcao); 
+} while (opcao == 's' || opcao == 'S');
+printf("Programa encerrado. Até mais!\n");
+return 0;
+}
