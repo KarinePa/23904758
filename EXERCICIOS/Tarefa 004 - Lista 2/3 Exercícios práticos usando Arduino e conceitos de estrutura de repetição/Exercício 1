@@ -1,0 +1,24 @@
+int cameraData[10];
+void setup() {
+Serial.begin(9600);
+cameraData[0] = 10;
+cameraData[1] = 20;
+cameraData[2] = 30;
+cameraData[3] = 40;
+cameraData[4] = 50;
+cameraData[5] = 60;
+cameraData[6] = 70;
+cameraData[7] = 80;
+cameraData[8] = 90;
+cameraData[9] = 100;
+Serial.println("Valores armazenados no vetor cameraData:");
+for (int i = 0; i < 10; i++) {
+Serial.print("cameraData[");
+Serial.print(i);
+Serial.print("] = ");
+Serial.println(cameraData[i]);
+}
+}
+void loop() {
+
+}
