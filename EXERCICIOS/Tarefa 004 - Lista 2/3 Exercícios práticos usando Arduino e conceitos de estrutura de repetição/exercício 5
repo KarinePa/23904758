@@ -1,0 +1,7 @@
+int ledPins[4] = {2, 3, 4, 5}; // Vetor com 4 pinos
+void setup() {
+Serial.begin(9600);
+Serial.println(ledPins[i]);
+}
+}void loop() {
+}
