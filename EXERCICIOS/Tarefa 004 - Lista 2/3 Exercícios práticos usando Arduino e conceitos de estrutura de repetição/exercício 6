@@ -1,0 +1,1 @@
+Defina o vetor: Crie um vetor chamado randomValues com o tamanho desejado(no seu caso, 5 elementos).Utilize a função random(): A função random() gera números aleatórios dentro deum intervalo específico. Você pode usá-la para preencher o vetor com valoresaleatórios.Preencha o vetor: Use um laço for para percorrer o vetor e atribuir um valoraleatório a cada posição
