@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+float nivel_bateria;
+printf("Monitoramento de Bateria do Robô\n");
+do {
+printf("Digite o nível da bateria (em %%): ");
+scanf("%f", &nivel_bateria);
+if (nivel_bateria <= 20) {
+printf("Atenção: Bateria baixa! O nível da bateria está em %.2f%%.\n",nivel_bateria);
+} else {
+printf("A bateria está ok! Nível: %.2f%%.\n", nivel_bateria);
+}
+} while (nivel_bateria <= 20);
+printf("A bateria foi recarregada e está acima de 20%%. Programa encerrado.\n");
+return 0;
+}
